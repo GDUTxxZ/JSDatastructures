@@ -94,7 +94,7 @@ function quickSort (arr, compare) { // 快速排序
   }
   let middle = arr[0]
   let middlePos = 0
-  for (let i = arr.length - 1; i > 0; i++) {
+  for (let i = arr.length - 1; i > 0; i--) {
     if (compare(middle, arr[i])) {
       arr.splice(0, 0, arr.splice(i, 1))
       middlePos++
